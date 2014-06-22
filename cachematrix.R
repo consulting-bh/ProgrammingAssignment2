@@ -50,11 +50,8 @@ cacheSolve <- function(x, ...) {
         ## where mat is an invertible, square matrix. The result is that data is set equal to the
         ## matrix 'mat'
         data <- x$get()  
-        m <- solve(data)        
+        m <- solve(data)
+        
         x$setinverse(m) # runs the setinverse function which caches the result of m into the m variable
         m
 }
-## example of how to call functions:
-## 1) mat<-rbind(1:3,c(0,1,5),c(5,6,0))
-## 2)makeCacheMatrix(mat)
-## 3)b<-cachesolve(a)
