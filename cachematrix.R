@@ -10,10 +10,10 @@
 ## 3) calling cacheSolve(CacheMatrix)
 
 
+
 ## makeCacheMatrix creates a special "matrix" and stores the matrix as well as its inverse
 ## The function is a list of four functions, which are evaluated when called by the cacheSolve function 
 ## The set and setinverse functions return the the matrix and inverse of the matrix respectively 
-
 
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
